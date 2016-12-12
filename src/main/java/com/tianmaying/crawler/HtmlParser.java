@@ -34,7 +34,7 @@ public class HtmlParser {
         Elements playlists = document.select(".tit.f-thide.s-fc0");
         return playlists.stream().map(e -> new WebPage(BASE_URL + e.attr("href"), PageType.playlist)).collect(Collectors.toList());
     }
-
+    
     public List<WebPage> parsePlaylist(String url) {
         Elements songs = Jsoup.parse(HTML_FETCHER.fetch(url)).select("ul.f-hide li a");
         return songs.stream().map(e -> new WebPage(BASE_URL + e.attr("href"), PageType.song, e.html())).collect(Collectors.toList());
