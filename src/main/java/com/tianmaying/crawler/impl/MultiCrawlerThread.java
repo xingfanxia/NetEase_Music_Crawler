@@ -4,6 +4,7 @@ import com.tianmaying.crawler.Crawler;
 import com.tianmaying.crawler.HtmlParser;
 import com.tianmaying.crawler.model.Song;
 import com.tianmaying.crawler.model.WebPage;
+import com.tianmaying.crawler.model.WebPage.PageType;
 
 public class MultiCrawlerThread implements Runnable {
     
@@ -36,10 +37,9 @@ public class MultiCrawlerThread implements Runnable {
                 }
             }
             getUnCrawlPageTimes = 0;
-
-            if(WebPage.PageType.playlists.equals(webPage.getType())) {
+            if(PageType.playlists.equals(webPage.getType())) {
                 multiCrawler.addToCrawlList(htmlParser.parsePlaylists(webPage.getUrl()));
-            } else if(WebPage.PageType.playlist.equals(webPage.getType())) {
+            } else if(PageType.playlist.equals(webPage.getType())) {
                 multiCrawler.addToCrawlList(htmlParser.parsePlaylist(webPage.getUrl()));
             } else {
                 Song song = new Song(webPage.getUrl(), webPage.getTitle(), htmlParser.parseSong(webPage.getUrl()));

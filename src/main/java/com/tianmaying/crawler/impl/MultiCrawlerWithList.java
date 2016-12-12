@@ -68,7 +68,7 @@ public class MultiCrawlerWithList implements Crawler {
     public List<Song> getSongs() {
         return songs;
     }
-
+    
     public static <T> void main(String[] args) throws Exception {
         Date startTime = new Date();
         Crawler crawler = new MultiCrawlerWithList();
