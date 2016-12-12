@@ -16,8 +16,6 @@ import com.tianmaying.crawler.model.WebPage.Status;
 import com.tianmaying.crawler.repository.SongRepository;
 import com.tianmaying.crawler.repository.WebPageRepository;
 
-import static com.tianmaying.crawler.model.WebPage.Status.crawled;
-
 @Component
 public class MultiCrawlerWithJpa implements Crawler {
     
@@ -43,15 +41,13 @@ public class MultiCrawlerWithJpa implements Crawler {
         if(webPage == null) {
             return null;
         }
-        // your code here
-        // 将页面标记为已爬，并返回页面
         webPage.setStatus(Status.crawled);
         return webPageRepository.saveAndFlush(webPage);
     }
     
     @Override
     public List<WebPage> addToCrawlList(List<WebPage> webPages) {
-        webPageRepository.save(webPages);
+        webPages = webPageRepository.save(webPages);
         webPageRepository.flush();
         return webPages;
     }

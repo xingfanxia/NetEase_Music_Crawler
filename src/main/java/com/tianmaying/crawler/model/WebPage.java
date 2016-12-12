@@ -19,10 +19,10 @@ public class WebPage {
     @Id
     private String url;
     private String title;
-
+    
     @Enumerated(EnumType.STRING)
     private PageType type;
-
+    
     @Enumerated(EnumType.STRING)
     private Status status;
     

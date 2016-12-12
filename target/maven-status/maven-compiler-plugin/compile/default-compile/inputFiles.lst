@@ -1,0 +1,16 @@
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/Crawler.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/impl/MultiCrawlerWithJpa.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/controller/JpaCrawlerController.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/HtmlParser.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/impl/MultiCrawlerThread.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/HtmlFetcher.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/repository/WebPageRepository.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/UpdateSchedule.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/impl/MultiCrawlerWithList.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/controller/SongController.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/Application.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/model/Song.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/impl/BasicCrawler.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/model/WebPage.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/repository/SongRepository.java
+/Users/xingfanxia/IdeaProjects/netease/src/main/java/com/tianmaying/crawler/controller/MultiCrawlerController.java

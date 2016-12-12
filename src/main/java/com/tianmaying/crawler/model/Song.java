@@ -5,7 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Song {
-
+    
     @Id
     private String url;
     private String title;
