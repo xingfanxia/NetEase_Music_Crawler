@@ -78,7 +78,7 @@
     </plugins>
   </build>
 
-  <repositories>
+<!--   <repositories>
     <repository>
       <id>aliyun-nexus</id>
       <name>Aliyun Maven Repository</name>
@@ -90,6 +90,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-  </repositories>
+  </repositories> -->
 
 </project>
